@@ -1,3 +1,83 @@
-body {
-    background-color: lightgray;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
+
+:root {
+    --background-color : #ffe8d6;
+    --text-color: #333;
+    --button-color: #cb997e;
+    --main-color: #6b705c;
+    --secondary-color: #a5a58d;
+}
+
+p, a {
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: var(--button-color) !important;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+header, footer {
+    background-color: var(--main-color);
+}
+
+header *, footer * {
+    color: white;
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+main {
+    margin: 0 5rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-container .card {
+    width: 10rem;
+    margin: 15px;
+}
+
+.home-polaroid {
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.article-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*body {*/
+/*    background-color: lightgray;*/
+/*}*/
+

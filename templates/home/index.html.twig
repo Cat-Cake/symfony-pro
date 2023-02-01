@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <main>
+        <article class="my-4">
+            <h3>Découvrez notre sélection de produit</h3>
+            <a href="/products">Voir tout les produits !</a>
+            <section class="card-container">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('images/patrick-OIFgeLnjwrM-unsplash.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Polaroid OneStep+</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn">Afficher les détails</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('images/mae-mu-_-E_2D-wgjg-unsplash.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Polaroid Now</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn">Afficher les détails</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('images/izzy-gerosa-xniTNHp4UVE-unsplash.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Polaroid Snap</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn">Afficher les détails</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="{{ asset('images/adrian-infernus-cLk_RQgbuis-unsplash.jpg') }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Polaroid Pop</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn">Afficher les détails</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <article class="presentation mb-5">
+            <h3>Qui sommes-nous ?</h3>
+            <p>
+                Bienvenue sur notre section 'Qui sommes-nous'. Nous sommes une entreprise passionnée par les polaroids et leur capacité à capturer les moments les plus précieux de la vie. Depuis notre fondation, nous nous consacrons à fournir des appareils de haute qualité et des accessoires pour les amateurs de polaroids du monde entier.
+            </p>
+            <p>
+                Notre équipe est composée de passionnés de la photo qui comprennent l'importance de chaque instant capturé. Nous sommes fiers de notre engagement en faveur de la qualité et de la satisfaction de nos clients. Nous croyons que les polaroids sont plus que de simples appareils photo - ce sont des outils pour saisir les souvenirs qui dureront toute une vie.
+            </p>
+            <p>
+                Nous espérons que vous apprécierez votre expérience sur notre site et que vous trouverez l'appareil et les accessoires dont vous avez besoin pour capturer les moments les plus précieux de votre vie. Merci de faire confiance à notre entreprise pour vous accompagner dans cette aventure photographique.
+            </p>
+            <a href="/about">En savoir plus ?</a>
+        </article>
+    </main>
+{% endblock %}

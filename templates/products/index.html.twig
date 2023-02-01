@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<main>
+    <article class="my-4">
+        <section class="card-container">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/patrick-OIFgeLnjwrM-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid OneStep+</h4>
+                    <p class="card-text">Ce classique moderne offre des fonctionnalités telles qu'un objectif ajustable, une application pour smartphone et des options de réglage pour la création de photos uniques.</p>
+                    <p class="card-text">
+                        Prix : 150€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/mae-mu-_-E_2D-wgjg-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Now</h4>
+                    <p class="card-text">Ce modèle compact et facile à utiliser permet de prendre des photos instantanées de haute qualité avec un système de flash automatique.</p>
+                    <p class="card-text">
+                        Prix : 100€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/izzy-gerosa-xniTNHp4UVE-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Snap</h4>
+                    <p class="card-text">Avec son design élégant et compact, ce modèle offre une variété de modes de prise de vue, ainsi qu'un écran LCD pour visualiser et partager vos photos.</p>
+                    <p class="card-text">
+                        Prix : 80€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/adrian-infernus-cLk_RQgbuis-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Pop</h4>
+                    <p class="card-text">Ce modèle polyvalent permet de prendre des photos instantanées de haute qualité, tout en offrant des fonctionnalités telles qu'un appareil photo numérique intégré et la possibilité de les imprimer directement.</p>
+                    <p class="card-text">
+                        Prix : 200€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/patrick-OIFgeLnjwrM-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Cube+</h4>
+                    <p class="card-text">Ce modèle ultra-compact offre une variété de fonctionnalités telles qu'une caméra vidéo full HD, une connexion Wi-Fi pour partager des photos en temps réel, et un design compact pour une portabilité facile.</p>
+                    <p class="card-text">
+                        Prix : 130€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/patrick-OIFgeLnjwrM-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid OneStep+</h4>
+                    <p class="card-text">Ce classique moderne offre des fonctionnalités telles qu'un objectif ajustable, une application pour smartphone et des options de réglage pour la création de photos uniques.</p>
+                    <p class="card-text">
+                        Prix : 150€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/mae-mu-_-E_2D-wgjg-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Now</h4>
+                    <p class="card-text">Ce modèle compact et facile à utiliser permet de prendre des photos instantanées de haute qualité avec un système de flash automatique.</p>
+                    <p class="card-text">
+                        Prix : 100€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/izzy-gerosa-xniTNHp4UVE-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Snap</h4>
+                    <p class="card-text">Avec son design élégant et compact, ce modèle offre une variété de modes de prise de vue, ainsi qu'un écran LCD pour visualiser et partager vos photos.</p>
+                    <p class="card-text">
+                        Prix : 80€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/adrian-infernus-cLk_RQgbuis-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Pop</h4>
+                    <p class="card-text">Ce modèle polyvalent permet de prendre des photos instantanées de haute qualité, tout en offrant des fonctionnalités telles qu'un appareil photo numérique intégré et la possibilité de les imprimer directement.</p>
+                    <p class="card-text">
+                        Prix : 200€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="{{ asset('images/patrick-OIFgeLnjwrM-unsplash.jpg') }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Polaroid Cube+</h4>
+                    <p class="card-text">Ce modèle ultra-compact offre une variété de fonctionnalités telles qu'une caméra vidéo full HD, une connexion Wi-Fi pour partager des photos en temps réel, et un design compact pour une portabilité facile.</p>
+                    <p class="card-text">
+                        Prix : 130€
+                    </p>
+                    <a href="#" class="btn">Afficher les détails</a>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+{% endblock %}
