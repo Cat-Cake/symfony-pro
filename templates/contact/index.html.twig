@@ -10,20 +10,20 @@
 
 <article class="article-form my-5">
     <section class="form-container  my-5">
-        <label for="inputPassword5" class="form-label">Adresse</label>
-        <input type="email" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+        <form action="{{ path('app_contact') }}" method="post">
 
-        <label for="inputPassword5" class="form-label">Numéro de téléphone</label>
-        <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <label for="inputPassword5" class="form-label">E-mail</label>
+            <input name="email" type="text" id="inputPassword5" class="form-control">
 
-        <label for="inputPassword5" class="form-label">E-mail</label>
-        <input type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+            <label for="inputPassword5" class="form-label">Objet</label>
+            <input name="subject" type="text" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
 
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </section>
 </article>
 
